@@ -1,0 +1,166 @@
+---
+import { Button, Process, TypingText } from "../../components";
+import Contact from "../../components/home/Contact.astro";
+import Projects from "../../components/home/Projects.astro";
+import Layout from "../../layouts/Layout.astro";
+import servicesData from "../../data/services.json";
+
+export async function getStaticPaths() {
+  const services = servicesData;
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+
+const serviceData = servicesData.find((s) => s.slug === service.slug);
+const adjectives = serviceData?.adjectives ?? [];
+const processTitle = serviceData?.processTitle ?? "";
+const process = serviceData?.process ?? [];
+---
+
+<Layout
+  title={`${serviceData?.name} - Vortex Studio`}
+  description={serviceData?.description}
+>
+  <section class="service-page">
+    <section class="service-page__main main-row">
+      <div class="main__caption">
+        <h1 class="title" transition:name={`service ${serviceData?.name}`}>
+          <span class="animate-fade-right animate-duration-1000 animate-ease-in-out animate-fill-both" >{serviceData?.name}</span>
+          <span class="title__typing animate-fade-right animate-duration-1000 animate-delay-100 animate-ease-in-out animate-fill-both">
+            <TypingText client:load array={adjectives} />
+          </span>
+        </h1>
+        <p class="animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in-out animate-fill-both">
+          {serviceData?.description}
+        </p>
+        <div class="animate-fade-right animate-duration-1000 animate-delay-300 animate-ease-in-out animate-fill-both">
+          <Button
+            size="main"
+            hashTo="contact"
+            label="Cotiza nuestro Servicio"
+            client:load
+          />
+        </div>
+      </div>
+      <div class="main__image animate-fade-up animate-duration-1000 animate-delay-300 animate-ease-in-out animate-fill-both">
+        <img src={serviceData?.image} alt={serviceData?.name} />
+      </div>
+    </section>
+    <Process processTitle={processTitle} process={ process } client:visible />
+  </section>
+  <Projects title="Últimos proyectos" />
+  <Contact />
+</Layout>
+
+<style>
+  .service-page {
+    padding-bottom: 60px;
+  }
+
+  .service-page__main {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    padding-top: 60px;
+  }
+
+  .main__caption {
+    flex: 4;
+  }
+
+  .main__image {
+    flex: 5;
+  }
+
+  .title {
+    color: #000;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 0.9em;
+    width: 80%;
+  }
+
+  .title span {
+    display: block;
+  }
+
+  .title__typing {
+    color: var(--purple);
+  }
+
+  .main__caption p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+    margin: 10px 0 30px;
+    width: 80%;
+  }
+
+  .title__typing {
+    color: var(--purple);
+    align-items: center;
+    display: flex;
+  }
+
+  .title__typing::after {
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    content: "|";
+    font-weight: 200;
+    margin-left: -8px;
+  }
+
+  @keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .service-page {
+      padding-bottom: 0;
+    }
+    .service-page__main {
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+
+    .main__image {
+      width: 100%;
+    }
+
+    .main__image img {
+      width: 100%;
+    }
+
+    .title {
+      color: #000;
+      font-size: 3em;
+      width: 100%;
+    }
+
+    .main__caption p {
+      width: 100%;
+    }
+
+    .title span {
+      display: inline-block;
+    }
+
+    .title__typing {
+      min-width: 200px;
+    }
+  }
+</style>

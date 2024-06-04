@@ -1,0 +1,37 @@
+---
+import { QuoteForm } from '../../components';
+---
+
+<section class="block-section" id="contact">
+	<div class="main-row content">
+		<div class="content__caption">
+			<h3 class="block-section__title">¿Deseas más información?</h3>
+			<p><b>¡Permítenos ayudarte a obtener la información que necesitas!</b><br>
+			Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios o cualquier otro tema, no dudes en ponerte en contacto con nosotros.</p>
+		</div>
+        <QuoteForm client:load />
+	</div>
+</section>
+
+<style>
+    .block-section__title {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        max-width: 940px;
+    }
+
+    .content__caption {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .content__caption {
+            text-align: left;
+        }
+
+    }
+</style>

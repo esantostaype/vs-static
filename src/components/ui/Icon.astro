@@ -1,0 +1,21 @@
+---
+
+interface Props {
+	name: string;
+	width: string;
+	height: string;
+    viewBox?: string;
+    fill?: string;
+}
+
+const { name, width, height, viewBox='0 0 32 32', fill='#000' } = Astro.props;
+---
+
+<svg
+    viewBox={ viewBox }
+    width={ width }
+    height={ height }
+    fill={ fill }
+>
+    <use xlink:href={`/assets/icons.svg#${ name }`}></use>
+</svg>

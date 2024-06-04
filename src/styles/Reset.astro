@@ -1,0 +1,286 @@
+<style is:global>
+    
+	/* html{
+		overflow: hidden;
+	} */
+
+	html.has-scroll-dragging {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.has-scroll-smooth body {
+		overflow: hidden;
+	}
+
+	.has-scroll-smooth [data-scroll-container] {
+		min-height: 100vh;
+	}
+
+	.c-scrollbar {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 11px;
+		height: 100vh;
+		transform-origin: center right;
+		transition: transform 0.3s, opacity 0.3s;
+		opacity: 0;
+		z-index: 99999999;
+	}
+	.c-scrollbar:hover {
+		transform: scaleX(1.45);
+	}
+	.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+		opacity: 1;
+	}
+
+	.c-scrollbar_thumb {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: black;
+		opacity: 0.5;
+		width: 7px;
+		border-radius: 10px;
+		margin: 2px;
+		cursor: -webkit-grab;
+		cursor: grab;
+	}
+	.has-scroll-dragging .c-scrollbar_thumb {
+		cursor: -webkit-grabbing;
+		cursor: grabbing;
+	}
+
+	:root {
+		--red: #FF1E50;
+		--purple: #5014FF;
+		--blue: #003CB4;
+		--redGradient: linear-gradient(45deg, #FF8C78 0%, #FF1E50 100%);
+		--purpleGradient: linear-gradient(45deg, #6478FF 0%, #5014FF 100%);
+		--blueGradient: linear-gradient(45deg, #00A5FF 0%, #003CB4 100%);
+		--dark: #0A0A20;
+		--gray: #757B89;
+		--lightgray: #f4f6f8;
+		--lightgray2: #eaeef2;
+		--whatsapp: #25d366;
+		--error: #ef5350;
+		--warning: #ff9800;
+		--info: #03a9f4;
+		--success: #4caf50;
+		--error-light: #fdeeee;
+		--warning-light: #fff5e6;
+		--info-light: #e6f7fe;
+		--success-light: #edf7ee;
+	}
+
+	* {
+		-webkit-font-smoothing: antialiased;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: inherit;
+		font-weight: inherit;
+		font-family: inherit;
+	}
+
+	a,
+	li,
+	span,
+	article,
+	header,
+	footer,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	svg {
+		outline: none;
+		transition: all 0.3s ease;
+	}
+
+	figure {
+		margin-bottom: 0;
+	}
+
+	strong,
+	b {
+		font-weight: bold;
+	}
+
+	html {
+		overflow-x: hidden;
+		overscroll-behavior: none;
+	}
+
+	@media screen and (prefers-reduced-motion: no-preference) {
+		html {
+			scroll-behavior: smooth;
+		}
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: var(--dark);
+		background-clip: content-box;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #f00;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: #ff0;
+	}
+
+	html.fixed {
+		overflow-y: hidden;
+		width: 100%;
+	}
+
+	body {
+		color: var(--gray);
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height: 1.5em;
+		margin: 0 auto;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 1em;
+		font-weight: inherit;
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	a {
+		color: inherit;
+		font-weight: inherit;
+		text-decoration: none;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	span {
+		font-weight: inherit;
+	}
+
+	input,
+	textarea,
+	select,
+	button {
+		background: transparent;
+		border: none;
+		color: inherit;
+		display: block;
+		padding: 0;
+	}
+
+	input[type="submit"],
+	button {
+		border: none;
+		cursor: pointer;
+	}
+
+	form label {
+		display: block;
+	}
+
+	form textarea {
+		height: 120px;
+	}
+
+	form textarea:focus,
+	form input:focus,
+	form select:focus {
+		outline: 2px solid var(--lightblue);
+	}
+
+	.wpcf7-not-valid-tip {
+		font-size: 14px;
+		margin-top: 3px;
+	}
+
+	.wpcf7 form .wpcf7-response-output {
+		margin: 40px 0 0;
+		padding: 16px 20px;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	::-webkit-input-placeholder {
+		color: inherit;
+	}
+
+	::-moz-placeholder {
+		color: inherit;
+	}
+
+	:-ms-input-placeholder {
+		color: inherit;
+	}
+
+	:-moz-placeholder {
+		color: inherit;
+	}
+
+    input,
+	textarea,
+	select {
+		background: transparent;
+		border: 2px solid var(--lightgray2);
+		border-radius: 8px;
+		color: inherit;
+		display: block;
+		font-size: inherit;
+		letter-spacing: 0.02em;
+		padding: 16px 20px;
+		transition: all 0.3s ease;
+		width: 100%;
+	}
+
+	input:hover,
+	textarea:hover,
+	select:hover {
+		border: 2px solid #000;
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	textarea:-webkit-autofill:focus,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover,
+	select:-webkit-autofill:focus {
+		-webkit-text-fill-color: inherit;
+		-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	}
+</style>

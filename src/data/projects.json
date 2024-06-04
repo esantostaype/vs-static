@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "drumlab",
+    "name": "Drumlab",
+    "description": "Drumlab es mucho más que un simple proyecto de branding; es una experiencia visual que fusiona la creatividad y la identidad de marca. Este proyecto destaca por su enfoque único en el diseño de marca, creando una presencia visual distintiva que deja una impresión duradera en la audiencia.",
+    "thumbnail": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462033/drumlab_8cbd64b779.webp",
+    "categories": [
+      {
+        "name": "Branding"
+      },
+      {
+        "name": "Sitios Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462033/drumlab_01_3c347d112f.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462034/drumlab_02_af61742e7d.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462034/drumlab_04_b7ddf92b3d.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462034/drumlab_06_399be442e4.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462034/drumlab_03_26251b477c.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462035/drumlab_05_187904c031.webp"
+      }
+    ]
+  },
+  {
+    "slug": "izifix",
+    "name": "Izifix",
+    "description": "Izifix es un sistema web innovador diseñado para facilitar la búsqueda y contratación de profesionales en diversos campos, como gasfiteros, carpinteros, cerrajeros, entre otros. Con Izifix, los usuarios pueden encontrar fácilmente expertos confiables para satisfacer sus necesidades de reparación y mantenimiento.",
+    "thumbnail": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706466379/izifix_8e14f6560b.webp",
+    "categories": [
+      {
+        "name": "Sistemas Web"
+      },
+      {
+        "name": "Branding"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Laravel",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/laravel_5b0044fbb3.svg"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706461131/vue_js_8f5a1b9f26.svg"
+      },
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706466380/izifix_01_10216e68ff.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706505489/izifix_02_668b18577a.webp"
+      }
+    ]
+  },
+  {
+    "slug": "jvs-control",
+    "name": "JVS Control",
+    "description": "JVS Control ofrece servicios especializados en la fabricación y mantenimiento de tableros eléctricos. Su sitio web no solo presenta la amplia gama de servicios profesionales que ofrecen, sino que también destaca su compromiso con la excelencia y la eficiencia en el campo de la ingeniería eléctrica.",
+    "thumbnail": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462284/JVS_control_d6e0a87830.webp",
+    "categories": [
+      {
+        "name": "Branding"
+      },
+      {
+        "name": "Sitios Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Wordpress",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/wordpress_b8a9ba5f8e.svg"
+      },
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706505767/JVS_Control_02_0ed5085200.webp"
+      },
+      {
+        "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462285/JVS_Control_01_9d51eec81d.webp"
+      }
+    ]
+  }
+]

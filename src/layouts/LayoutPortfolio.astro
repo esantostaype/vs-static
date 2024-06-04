@@ -1,0 +1,37 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Global from "../styles/Global.astro"
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title="Estudio Digital en Lima, Perú | Vortex Studio",
+	description="Somos Vortex Studio. Te ayudamos a superar los más grandes desafíos, con el objetivo de alcanzar tu potencial. Estamos comprometidos contigo. Sentimos tu marca como nuestra, convirtiendo tu éxito en nuestro principal logro.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="generator" content={ Astro.generator } />
+		<meta name="description" content={ description } />
+		<title>{ title }</title>
+		<ViewTransitions />
+	</head>
+	<body data-scroll-container>		
+		<main data-scroll-section>
+			<slot />
+			<Footer/>
+		</main>
+	</body>
+</html>
+
+<Global/>

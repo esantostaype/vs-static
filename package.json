@@ -1,0 +1,36 @@
+{
+  "name": "vortexstudio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/react": "^3.4.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.2.6",
+    "formik": "^2.4.5",
+    "ityped": "^1.0.3",
+    "locomotive-scroll": "^4.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-type-animation": "^3.2.0",
+    "rehype-external-links": "^3.0.0",
+    "swiper": "^11.0.5",
+    "typed.js": "^2.1.0",
+    "typescript": "^5.3.3",
+    "yup": "^1.3.3"
+  },
+  "devDependencies": {
+    "@types/ityped": "^1.0.3",
+    "@types/locomotive-scroll": "^4.1.3",
+    "tailwindcss-animated": "^1.0.1"
+  }
+}

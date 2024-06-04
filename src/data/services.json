@@ -1,0 +1,206 @@
+[
+  {
+    "slug": "sitios-web",
+    "name": "Sitios Web",
+    "adjectives": [
+      {"name": "funcionales"}, {"name": "adaptables"}, {"name": "estéticos"}, {"name": "intuitivos"}
+    ],
+    "description": "Transformamos tu visión en un sitio web cautivador. Experiencia y creatividad se fusionan para destacar tu presencia en línea.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453294/sitios_web_e08ed08037.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717459805/vortex-studio/sitios-web_bkyjkl.svg",
+    "color": "25D366",
+    "processTitle": "Desde el Análisis Estratégico hasta la Excelencia Digital",
+    "process": [
+      {
+        "title": "Análisis y Planificación",
+        "description": "En esta etapa inicial, nos sumergimos en tus objetivos comerciales y requisitos específicos para definir la estructura del sitio web. Realizamos un análisis de la competencia para identificar oportunidades y establecer la arquitectura que brindará una experiencia de usuario coherente.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Diseño UI/UX",
+        "description": "Nuestro equipo crea una interfaz atractiva y funcional que refleja tu marca. Desarrollamos wireframes y mockups detallados para visualizar la estructura y el flujo del sitio web, priorizando la experiencia del usuario (UI/UX) para una navegación óptima.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Desarrollo Técnico",
+        "description": "Utilizamos las últimas tecnologías y prácticas de desarrollo web para construir un sitio robusto, rápido y compatible con múltiples dispositivos. Desde la codificación front-end hasta la integración de funcionalidades específicas, cumplimos con los estándares más altos.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Contenido y Pruebas",
+        "description": "Llenamos tu sitio web con contenido relevante y atractivo, optimizado para SEO. Realizamos pruebas exhaustivas para garantizar un funcionamiento perfecto en diferentes navegadores y dispositivos.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Lanzamiento y Mantenimiento",
+        "description": "Gestionamos el lanzamiento en vivo y proporcionamos soporte post-lanzamiento para ajustes y mejoras. Ofrecemos servicios de mantenimiento continuo para mantener tu sitio seguro, actualizado y funcional.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  },
+  {
+    "slug": "sistemas-web",
+    "name": "Sistemas Web",
+    "adjectives": [
+      {"name": "eficientes"}, {"name": "personalizados"}, {"name": "innovadores"}, {"name": "escalables"}
+    ],
+    "description": "Potencia tu negocio con sistemas web a medida. Automatiza procesos, optimiza tu operativa y alcanza tus metas con nuestra solución tecnológica.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453209/sistemas_web_52812df6c0.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717459753/vortex-studio/sistemas-web_umdwlo.svg",
+    "color": "00C2FF",
+    "processTitle": "Desde la Estrategia hasta la Implementación",
+    "process": [
+      {
+        "title": "Consultoría y Requisitos",
+        "description": "Comprendemos tus necesidades y procesos comerciales para diseñar un sistema web personalizado que mejore la eficiencia y productividad de tu negocio.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Desarrollo y Pruebas",
+        "description": "Implementamos soluciones tecnológicas innovadoras con un enfoque en la usabilidad y la escalabilidad. Realizamos pruebas rigurosas para garantizar un funcionamiento óptimo.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Despliegue y Mantenimiento",
+        "description": "Gestionamos la implementación del sistema y proporcionamos soporte continuo para mantenerlo actualizado y optimizado.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  },
+  {
+    "slug": "e-commerce",
+    "name": "E-Commerce",
+    "adjectives": [
+      {"name": "atractivas"}, {"name": "fluidas"}, {"name": "seguras"}, {"name": "eficaces"}
+    ],
+    "description": "Impulsa tus ventas en línea con nuestras páginas web de E-Commerce. Diseños atractivos, procesos de compra fluidos y seguridad garantizada.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453209/e_commerce_6366df1db1.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717465939/vortex-studio/e-commerce_kwrrh9.svg",
+    "color": "FFC700",
+    "processTitle": "Desde la Creación hasta el Lanzamiento",
+    "process": [
+      {
+        "title": "Diseño y Desarrollo",
+        "description": "Creamos una tienda en línea atractiva y funcional que refleje tu marca. Implementamos características clave para una experiencia de compra fluida y segura.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Integración de Pagos y Seguridad",
+        "description": "Configuramos métodos de pago seguros y optimizamos la seguridad de la tienda para proteger los datos de los clientes.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Lanzamiento y Optimización",
+        "description": "Gestionamos el lanzamiento de tu tienda online y realizamos mejoras continuas para optimizar la conversión y la experiencia del usuario.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  },
+  {
+    "slug": "aplicaciones-moviles",
+    "name": "Aplicaciones Móviles",
+    "adjectives": [
+      {"name": "innovadoras"}, {"name": "intuitivas"}, {"name": "rápidas"}, {"name": "escalables"}
+    ],
+    "description": "Da vida a tu idea con aplicaciones móviles innovadoras. Interfaz intuitiva, rendimiento excepcional y presencia en la palma de sus manos.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453209/aplicaciones_moviles_86a199b1bf.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717465747/vortex-studio/aplicaciones-moviles_s2nnks.svg",
+    "color": "FF71F1",
+    "processTitle": "Desde la Conceptualización hasta el Despliegue",
+    "process": [
+      {
+        "title": "Idea y Diseño",
+        "description": "Trabajamos contigo para conceptualizar tu aplicación y diseñar una interfaz intuitiva que asegure una experiencia de usuario excepcional.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Desarrollo y Pruebas",
+        "description": "Implementamos tu aplicación con tecnologías móviles de vanguardia y realizamos pruebas exhaustivas para garantizar su rendimiento óptimo.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Lanzamiento y Mantenimiento",
+        "description": "Gestionamos el lanzamiento en las tiendas de aplicaciones y proporcionamos soporte continuo para actualizaciones y mejoras.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  },
+  {
+    "slug": "branding",
+    "name": "Branding",
+    "adjectives": [
+      {"name": "único"}, {"name": "estratégico"}, {"name": "impactante"}, {"name": "coherente"}
+    ],
+    "description": "Define tu identidad con nuestro servicio de branding. Captura la esencia de tu negocio con diseño único y estratégico.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453209/branding_d83bcb7fd7.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717466186/vortex-studio/branding_fmk0dy.svg",
+    "color": "886AFF",
+    "processTitle": "Desde la Estrategia hasta la Implementación",
+    "process": [
+      {
+        "title": "Análisis de Marca",
+        "description": "Realizamos un análisis exhaustivo de tu marca y mercado para desarrollar una estrategia de branding efectiva y auténtica.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Diseño de Identidad Visual",
+        "description": "Creamos elementos visuales únicos que representen la personalidad y valores de tu marca, incluyendo logos, paletas de colores y tipografías.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Implementación y Gestión",
+        "description": "Aplicamos tu identidad visual de manera coherente en todos los puntos de contacto de tu marca, asegurando una presencia sólida y reconocible.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  },
+  {
+    "slug": "packaging",
+    "name": "Packaging",
+    "adjectives": [
+      {"name": "impactante"}, {"name": "funcional"}, {"name": "creativo"}, {"name": "atractivo"}
+    ],
+    "description": "Eleva tu producto con nuestro servicio de packaging. Crea impacto visual y funcionalidad en cada presentación.",
+    "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453209/packaging_4169964641.svg",
+    "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1717466350/vortex-studio/packaging_hwjowx.svg",
+    "color": "9EFF00",
+    "processTitle": "Desde el Concepto hasta la Producción",
+    "process": [
+      {
+        "title": "Diseño Creativo",
+        "description": "Desarrollamos conceptos de packaging que destaquen la esencia y beneficios de tu producto, asegurando un diseño atractivo y funcional.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Producción y Pruebas",
+        "description": "Gestionamos la producción del packaging, asegurando la calidad y funcionalidad del diseño. Realizamos pruebas para optimizar su impacto visual.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      },
+      {
+        "title": "Implementación y Evaluación",
+        "description": "Apoyamos la implementación del packaging en tu cadena de suministro y evaluamos su rendimiento para ajustes futuros.",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706458521/analisis_planificacion_icon_fc6f304862.webp",
+        "image": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706453652/analisis_planificacion_c8cbac80fd.webp"
+      }
+    ]
+  }
+]

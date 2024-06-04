@@ -1,0 +1,196 @@
+---
+import LayoutPortfolio from "../../layouts/LayoutPortfolio.astro";
+import Contact from "../../components/home/Contact.astro";
+import { BackButton, ProjectBackground } from "../../components";
+import projectsData from "../../data/projects.json";
+
+export async function getStaticPaths() {
+  const projects = projectsData;
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+const { project } = Astro.props;
+
+const projectData = projectsData.find((s) => s.slug === project.slug);
+---
+
+<LayoutPortfolio title={`${projectData?.name} – Vortex Studio`} description={projectData?.description}>
+  <div class="projects__back-button">
+    <BackButton client:load />
+  </div>
+  <section data-scroll-section>
+    <section class="content main-row">
+      <div class="header">
+        <h1 class="title">{projectData?.name}</h1>
+        <div class="info">
+          <ul class="categories">
+            {projectData?.categories.map((category) => <li>{category.name}</li>)}
+          </ul>
+          <ul class="tech">
+            {
+              projectData?.technologies.map((tech) => (
+                <li>
+                  <img src={tech.icon} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+      <ul class="gallery">
+        {
+          projectData?.gallery.map((image, index) => (
+            <li transition:name={index === 0 ? `image${projectData.slug}` : undefined}>
+              <img src={image.url} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </section>
+  <ProjectBackground client:load />
+  <Contact />
+</LayoutPortfolio>
+
+<style>
+  .main-row {
+    padding: 0;
+    width: 1280px;
+  }
+
+  .content {
+    color: #fff;
+    position: relative;
+    z-index: 999999;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: sticky;
+    z-index: 3;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  .info {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  .categories {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    line-height: 1.2em;
+    gap: 4px;
+    text-transform: uppercase;
+  }
+
+  .categories li {
+    border: 1px solid var(--lightgray2);
+    border-radius: 4px;
+    display: block;
+    padding: 8px 12px;
+  }
+
+  .tech {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .tech li {
+    margin-left: 10px;
+  }
+
+  .tech img {
+    width: 24px;
+  }
+
+  .close {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    top: 24px;
+    transition: all 0.3s ease;
+    width: 32px;
+    z-index: 99;
+  }
+
+  .close:hover {
+    transform: scale(1.1);
+  }
+
+  .close:active {
+    transform: scale(0.97);
+  }
+
+  .gallery {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+
+  .projects__back-button {
+    left: 20px;
+    position: fixed;
+    top: 20px;
+    z-index: 9999999999;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .main-row {
+      width: 1020px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .header {
+      padding: 20px 30px;
+    }
+
+    .main-row {
+      padding: 0;
+      width: 100%;
+    }
+
+    .gallery {
+      border-radius: 0;
+    }
+
+    .content {
+      color: inherit;
+    }
+    .title {
+      font-size: 2em;
+      line-height: 1em;
+      margin-left: 44px;
+    }
+    .projects__back-button {
+      top: 17px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header {
+      display: none;
+    }
+    .projects__back-button {
+      left: 17px;
+    }
+  }
+</style>

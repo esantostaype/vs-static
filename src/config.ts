@@ -1,0 +1,1 @@
+export const API_URL = import.meta.env.NEXT_PUBLIC_STRAPI_API_URL

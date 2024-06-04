@@ -1,0 +1,16 @@
+---
+import { Arrow } from "./Icons";
+
+interface Props {
+    hashTo: string;
+}
+
+const { hashTo } = Astro.props;
+---
+
+<a href=`#${ hashTo }` class="main-button" id="buttonTo">
+    <span class="main-button__label"><slot/></span>
+    <div class="main-button__icon">
+        <Arrow height="16px" width="16px" viewBox="0 0 16 16" fill="#fff"/>
+    </div>
+</a>

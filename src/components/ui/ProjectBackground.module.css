@@ -1,0 +1,44 @@
+
+.background{
+    background-color: var(--dark);
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.background::before {
+    background: var(--purpleGradient);
+    border-radius: 1000px;
+    bottom: -50%;
+    content: '';
+    display: block;
+    filter: blur(40vh);
+    height: 100vh;
+    opacity: 0.4;
+    right: -20vh;
+    width: 100vh;
+    position: absolute;
+}
+
+.background::after {
+    background: var(--blueGradient);
+    border-radius: 1000px;
+    content: '';
+    display: block;
+    filter: blur(40vh);
+    height: 100vh;
+    opacity: 0.4;
+    right: -20vh;
+    width: 100vh;
+    top: -50%;
+    position: absolute;
+}
+
+@media screen and (max-width: 1280px) {
+    .background{
+        display: none;
+    }
+}
