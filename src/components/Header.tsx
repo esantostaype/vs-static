@@ -22,7 +22,7 @@ export const Header = () => {
                     <img src="/images/vortex-studio.svg" width="166" height="30" alt="Vortex Studio" className="logo__label" />
                     <img src="/images/vortex-studio-light-bg.svg" width="166" height="30" alt="Vortex Studio" className="logo__label__light-bg" />
                 </a>
-                <button className="nav-button">
+                {/* <button className="nav-button">
                     <div className="nav-button__wrapper">
                         <span className="nav-button__dot"></span>
                         <span className="nav-button__dot"></span>
@@ -34,7 +34,7 @@ export const Header = () => {
                         <span className="nav-button__dot"></span>
                         <span className="nav-button__dot"></span>
                     </div>
-                </button>
+                </button> */}
             </div>
         </header>
     )
