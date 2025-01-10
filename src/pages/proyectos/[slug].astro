@@ -16,7 +16,7 @@ const { project } = Astro.props;
 const projectData = projectsData.find((s) => s.slug === project.slug);
 ---
 
-<LayoutPortfolio title={`${projectData?.name} – Vortex Studio`} description={projectData?.description}>
+<LayoutPortfolio title={`${projectData?.name} – IT Soluciones`} description={projectData?.description}>
   <div class="projects__back-button">
     <BackButton client:load />
   </div>
