@@ -2,6 +2,7 @@
 import IsoBg from "../ui/IsoBg.astro";
 import IsoStroke from "../ui/IsoStroke.astro";
 import { Button } from "../../components";
+import IsoVideo from "../ui/IsoVideo.astro";
 ---
 <section>
 	<div class="content main-row">
@@ -21,16 +22,11 @@ import { Button } from "../../components";
 	</div>
 	<div class="image">
 		<div class="video animate-fade animate-duration-2000 animate-delay-[400ms] animate-ease-in-out animate-fill-both" data-scroll data-scroll-speed="1">
-			<div class="video__mask">
-                <IsoBg />
-			</div>
-			<video autoplay muted loop poster="https://res.cloudinary.com/dq6txmetn/image/upload/v1706463995/vortex_video_poster_dc10f643bd.webp">
-				<source src="https://res.cloudinary.com/dq6txmetn/video/upload/v1706391685/vortex_video_02b79e633b.mp4" />
-			</video>
+			<IsoVideo/>
 		</div>
-        <div class="animate-fade animate-duration-2000 animate-delay-[600ms] animate-ease-in-out animate-fill-both">
+        <!-- <div class="animate-fade animate-duration-2000 animate-delay-[600ms] animate-ease-in-out animate-fill-both">
             <IsoStroke />
-        </div>
+        </div> -->
 	</div>
 </section>
 
@@ -84,46 +80,18 @@ import { Button } from "../../components";
     }
 
     .image {
-        height: 80vh;
+        height: 100vh;
         position: absolute;
-        right: 10vh;
-        top: 10vh;
+        right: -10rem;
+        top: 0;
         width: 60%;
     }
 
     .video {
         height: 100%;
         mix-blend-mode: lighten;
-        position: absolute;
-        right: 0;
-        top: 0;
         width: 100%;
         z-index: 1;
-    }
-
-    .video video {
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.6;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .video__mask {
-        height: 100.1%;
-        position: absolute;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .video__mask svg {
-        height: 100%;
-        left: 50%;
-        position: absolute;
-        top: 0;
-        transform: translateX(-50%);
-        width: auto;
     }
 
     .image:before {
@@ -161,8 +129,6 @@ import { Button } from "../../components";
         }
 
         .image {
-            height: 75vh;
-            top: 12.5vh;
             width: 50%;
         }
     }
@@ -173,9 +139,6 @@ import { Button } from "../../components";
 		}
 
 		.image {
-			height: 75vh;
-			right: 0;
-			top: 12.5vh;
 			width: 65%;
 		}
 	}
@@ -200,10 +163,11 @@ import { Button } from "../../components";
         }
 
         .image {
-            height: 50vh;
-            right: 0;
-            top: 136px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
+            right: 0;
         }
     }
 
