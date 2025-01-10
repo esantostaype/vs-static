@@ -42,8 +42,8 @@ const projectData = projectsData.find((s) => s.slug === project.slug);
       <ul class="gallery">
         {
           projectData?.gallery.map((image, index) => (
-            <li transition:name={index === 0 ? `image${projectData.slug}` : undefined}>
-              <img src={image.url} />
+            <li transition:name={ index === 0 ? `image${ projectData.slug }` : undefined }>
+              <img src={ image.url } />
             </li>
           ))
         }
