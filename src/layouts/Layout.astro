@@ -57,4 +57,55 @@ const {
 	});
 </script> -->
 
+<script>
+	import LocomotiveScroll from 'locomotive-scroll'
+
+interface ScrollInstance {
+  destroy: () => void
+}
+
+let locomotiveScroll: ScrollInstance | null = null
+
+const initScroll = (): void => {
+  if ( locomotiveScroll ) {
+    locomotiveScroll.destroy()
+  }
+
+  window.scrollTo(0, 0)
+
+  locomotiveScroll = new LocomotiveScroll
+}
+
+const handleHeaderScroll = (): void => {
+  const header = document.querySelector('header')
+  if (!header) return
+
+  const add_class_on_scroll = (): void => header.classList.add("onScroll")
+  const remove_class_on_scroll = (): void => header.classList.remove("onScroll")
+
+  const scrollHandler = (): void => {
+    const scrollpos = window.scrollY
+    if (scrollpos >= header.offsetHeight) {
+      add_class_on_scroll()
+    } else {
+      remove_class_on_scroll()
+    }
+  }
+
+  window.addEventListener('scroll', scrollHandler)
+}
+
+document.addEventListener("astro:page-load", () => {
+  initScroll()
+  handleHeaderScroll()
+})
+
+document.addEventListener("astro:before-preparation", () => {
+  if (locomotiveScroll) {
+    locomotiveScroll.destroy()
+    locomotiveScroll = null
+  }
+})
+</script>
+
 <Global/>
