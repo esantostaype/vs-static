@@ -1,0 +1,174 @@
+---
+import IsoVideo from "../ui/IsoVideo.astro"
+---
+<section>
+	<div class="content main-row">
+		<div class="caption">
+			<div class="titles">
+				<h1 class="title">
+            <span class="animate-fade-right animate-duration-1000 animate-delay-100 animate-ease-in-out animate-fill-both">Estamos en Construcción</span>
+        </h1>
+				<h2 class="animate-fade-right animate-duration-1000 animate-delay-300 animate-ease-in-out animate-fill-both">Muy pronto nos adecuaremos a tus necesidades.</h2>
+			</div>
+		</div>
+	</div>
+	<div class="image">
+		<div class="video animate-fade animate-duration-2000 animate-delay-[400ms] animate-ease-in-out animate-fill-both">
+			<IsoVideo/>
+		</div>
+	</div>
+</section>
+
+<style>
+    section {
+        background: var(--dark);
+        color: #fff;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+
+    .content {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        position: relative;
+        z-index: 3;
+    }
+
+    .caption {
+        max-width: 60%;
+    }
+
+    .titles {
+        font-size: 4.25em;
+        font-weight: 300;
+        line-height: 1em;
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 1.66em;
+        font-weight: bold;
+        line-height: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    .title span {
+        display: inline-block;
+    }
+
+    .title span.highlight {
+        border-radius: 0.25rem;
+        background: var(--redGradient);
+        color: #000;
+        line-height: 0.8em;
+        mix-blend-mode: lighten;
+        padding: 6px 8px;
+    }
+
+    .image {
+        height: 100vh;
+        position: absolute;
+        right: -10rem;
+        top: 0;
+        width: 60%;
+    }
+
+    .video {
+        height: 100%;
+        mix-blend-mode: lighten;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .image:before {
+        background: var(--purpleGradient);
+        border-radius: 1000px;
+        bottom: -50%;
+        content: '';
+        display: block;
+        filter: blur(40vh);
+        height: 100vh;
+        opacity: 0.4;
+        right: -20vh;
+        width: 100vh;
+        position: absolute;
+    }
+
+    .image:after {
+        background: var(--blueGradient);
+        border-radius: 1000px;
+        content: '';
+        display: block;
+        filter: blur(40vh);
+        height: 100vh;
+        opacity: 0.4;
+        right: -20vh;
+        width: 100vh;
+        top: -50%;
+        position: absolute;
+    }
+
+    @media screen and (max-width: 1600px) {
+
+        .titles {
+            font-size: 4em;
+        }
+
+        .image {
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+		.titles {
+			font-size: 3.4em;
+		}
+
+		.image {
+			width: 65%;
+		}
+	}
+
+    @media screen and (max-width: 1023px) {
+
+        .content {
+            align-items: flex-end;
+            padding-bottom: 40px;
+        }
+
+        .caption {
+            max-width: 100%;
+        }
+
+        .titles {
+            font-size: 3em;
+        }
+
+        .title {
+            line-height: 1em;
+        }
+
+        .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .titles {
+			font-size: 2em;
+			line-height: 1.2em;
+		}
+
+        .image {
+            top: 94px;
+        }
+    }
+</style>
