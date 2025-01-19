@@ -1,20 +1,47 @@
 ---
 import { Image } from 'astro:assets';
 ---
-<section class="block-section">
+<section class="block-section my-16">
 	<div class="main-row content">
-		<div class="caption" data-scroll-repeat data-scroll data-scroll-speed="0.1">
+		<div class="flex-[4] caption">
 			<h3 class="subtitle">Somos IT Soluciones</h3>
 			<h2 class="title">Te ayudamos a superar los más grandes desafíos, con el objetivo de alcanzar tu potencial.</h2>
 			<p>Estamos comprometidos contigo. Sentimos tu marca como nuestra, convirtiendo tu éxito en nuestro principal logro.</p>
 		</div>
-		<figure class="image">
-            <Image src="/images/about-us-1.svg" class="image__front" data-scroll-repeat data-scroll data-scroll-speed="0.2" width="768" height="586" alt="Somos IT Soluciones"/>
-            <Image src="/images/about-us-5.svg" data-scroll-repeat data-scroll data-scroll-speed="0.1" width="768" height="586" alt="Somos IT Soluciones"/>
-            <Image src="/images/about-us-4.svg" data-scroll-repeat data-scroll data-scroll-speed="0.11" width="768" height="586" alt="Somos IT Soluciones"/>
-            <Image src="/images/about-us-3.svg" data-scroll-repeat data-scroll data-scroll-speed="0.13" width="768" height="586" alt="Somos IT Soluciones"/>
-            <Image src="/images/about-us-2.svg" data-scroll-repeat data-scroll data-scroll-speed="0.16" width="768" height="586" alt="Somos IT Soluciones"/>
-		</figure>
+		<div class="flex-[5] relative reveal-fade w-full">
+            <div class="relative md:inline-block">
+              <img 
+                src="/images/dynamic-studio-process.webp" 
+                alt="Dynamic Studio Process" 
+                class="md:absolute right-0 -top-36 z-10" 
+                data-scroll 
+                data-scroll-speed="0.02"
+                width="300"
+                height="164"
+                loading="lazy"
+              >
+              <img 
+                src="/images/dynamic-studio-dashboard.webp" 
+                alt="Dynamic Studio Dashboard" 
+                class="rounded md:rounded-2xl w-[80%] xl:w-auto" 
+                data-scroll 
+                data-scroll-speed="-0.04"
+                width="560"
+                height="402"
+                loading="lazy"
+              >
+            </div>
+            <img 
+              src="/images/dynamic-studio-app-mobile.webp"
+              alt="Dynamic Studio App Mobile" 
+              class="absolute -bottom-[20%] md:bottom-auto md:top-16 right-0 xl:-right-20 2xl:right-0 w-[34%] xl:auto" 
+              data-scroll 
+              data-scroll-speed="0.1"
+              width="240"
+              height="468"
+              loading="lazy"
+            >
+          </div>
 	</div>
 </section>
 
@@ -32,7 +59,6 @@ import { Image } from 'astro:assets';
 
     .caption {
         color: #000;
-        flex: 1;
         margin-right: 60px;
     }
 
