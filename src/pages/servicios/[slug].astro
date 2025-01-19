@@ -47,7 +47,7 @@ const process = serviceData?.process ?? [];
         </div>
       </div>
       <div class="main__image animate-fade-up animate-duration-1000 animate-delay-300 animate-ease-in-out animate-fill-both">
-        <img src={serviceData?.image} alt={serviceData?.name} />
+        <img src={serviceData?.image} alt={serviceData?.name} class="rounded-lg aspect-[4/3] w-full object-cover" />
       </div>
     </section>
     <Process processTitle={processTitle} process={ process } client:visible />

@@ -1,0 +1,65 @@
+---
+import ServiceItem from "./ServiceItem.astro";
+import services from '../../data/services.json'
+
+interface Props {
+  title: string;
+}
+
+const methodology = [
+  {
+    title: "Análisis Inicial",
+    description: "Evaluamos tus necesidades y procesos actuales para identificar áreas de mejora y oportunidades de digitalización.",
+    icon: "/images/methodology/step1.svg"
+  },
+  {
+    title: "Diseño de Soluciones",
+    description: "Creamos un plan personalizado con soluciones tecnológicas adaptadas a los objetivos de tu negocio.",
+    icon: "/images/methodology/step2.svg"
+  },
+  {
+    title: "Implementación",
+    description: "Desarrollamos e integramos herramientas digitales que optimizan tus operaciones y mejoran la experiencia de tus clientes.",
+    icon: "/images/methodology/step3.svg"
+  },
+  {
+    title: "Capacitación",
+    description: "Preparamos a tu equipo para adoptar las nuevas tecnologías a través de entrenamientos prácticos y especializados.",
+    icon: "/images/methodology/step4.svg"
+  },
+  {
+    title: "Soporte y Optimización",
+    description: "Brindamos soporte continuo y realizamos ajustes para garantizar que las soluciones implementadas sigan siendo efectivas.",
+    icon: "/images/methodology/step5.svg"
+  }
+]
+
+const { title } = Astro.props;
+---
+
+<section class="block-section bg-gray-100">
+  <div class="main-row">
+    <h3 class="block-section__title">{title}</h3>
+    <ul class="flex flex-col lg:flex-row gap-6">
+      {
+        methodology && methodology.length > 0
+          ? methodology.map(( step: any ) => (
+              <li class="flex-1 flex flex-col lg:flex-row items-center gap-6 group">
+                <div class="flex-1 w-full text-center lg:text-left">
+                  <div class="flex lg:block justify-center">
+                    <img src={ step.icon } alt={ step.title } width="48"/>
+                  </div>
+                  <h3 class="font-bold leading-tight text-accent my-2">{ step.title }</h3>
+                  <p class="text-sm">{ step.description }</p>
+                </div>
+                <div class="flex-[0_0_32px] flex justify-center opacity-40 group-last:hidden">
+                  <img src="/images/arrow-small-right.svg" width="32" class="hidden lg:block"/>
+                  <img src="/images/arrow-small-down.svg" width="32" class="block lg:hidden"/>
+                </div>
+              </li>
+            ))
+          : "No Service Found"
+      }
+    </ul>
+  </div>
+</section>

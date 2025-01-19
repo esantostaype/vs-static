@@ -25,7 +25,7 @@ export const Process: React.FC<ProcessProps> = ({ processTitle, process }) => {
   const [processList, setProcessList] = useState<SwiperObject>();
 
   return (
-    <section className="process animate-fade-up animate-duration-1000 animate-delay-300">
+    <section className="process animate-fade-up animate-duration-1000 animate-delay-300 mt-16">
       <div className="process__main">
         <div className={styles.list}>
           <span>El proceso</span>

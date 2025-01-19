@@ -4,6 +4,9 @@ import animations from "tailwindcss-animated";
 export default {
   theme: {
     extend: {
+      colors: {
+        accent: '#00c864'
+      },
       fontFamily: {
         sans: ['Inter'],
       },
