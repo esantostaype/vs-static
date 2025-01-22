@@ -33,10 +33,10 @@ export const QuoteForm = () => {
   return (
     <Formik
       initialValues={{
-        fullName: "test",
-        phone: "999888777",
-        email: "esantostaype@gmail.com",
-        comments: "test",
+        fullName: "",
+        phone: "",
+        email: "",
+        comments: "",
       }}
       validationSchema={SignupSchema}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
