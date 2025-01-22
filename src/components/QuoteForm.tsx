@@ -5,15 +5,13 @@ import { useState } from "react";
 import { Spinner } from "./ui/Spinner";
 
 interface FormData {
-  service: string;
   fullName: string;
   phone: string;
   email: string;
-  description: string;
+  comments: string;
 }
 
 const SignupSchema = Yup.object().shape({
-  service: Yup.string().required("Este campo es requerido"),
   fullName: Yup.string()
     .min(2, "Tu nombre completo debe tener al menos 2 caracteres")
     .max(48, "Tu nombre completo no debe ser mayor a 48 caracteres")
@@ -24,35 +22,76 @@ const SignupSchema = Yup.object().shape({
   email: Yup.string()
     .email("No es un Email válido")
     .required("Este campo es requerido"),
-  description: Yup.string().required("Este campo es requerido"),
+  comments: Yup.string().required("Este campo es requerido"),
 });
 
 export const QuoteForm = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false)
 
   return (
     <Formik
       initialValues={{
-        service: "",
-        fullName: "",
-        phone: "",
-        email: "",
-        description: "",
+        fullName: "test",
+        phone: "999888777",
+        email: "esantostaype@gmail.com",
+        comments: "test",
       }}
       validationSchema={SignupSchema}
-      onSubmit={async (values: FormData, { setSubmitting, resetForm }) => {
+      onSubmit={async (values, { setSubmitting, resetForm }) => {
+        try {
+          setError(false)
+          const response = await fetch(`${ import.meta.env.PUBLIC_API_URL }/contact-us`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+            },
+            body: JSON.stringify(values),
+            mode: 'cors',
+            credentials: 'same-origin'
+          })
+
+          let data
+          try {
+            data = await response.json()
+          } catch (e) {
+            console.error('Error parsing response:', e)
+            throw new Error('Invalid server response')
+          }
+
+          if (!response.ok) {
+            throw new Error(data.error || 'Failed to send email')
+          }
+
+          setSubmitted(true)
+          resetForm()
+          setTimeout(() => setSubmitted(false), 5000)
+        } catch (error) {
+          console.error('Error sending email:', error)
+          setError(true)
+          setTimeout(() => setError(false), 5000)
+        } finally {
+          setSubmitting(false)
+        }
       }}
     >
       {({ errors, touched, values, isSubmitting }) => (
         <Form className="form">
-          <div className={`submitting ${loading && "active"}`}>
+          <div className={`submitting ${ isSubmitting ? "active" : "" }`}>
             <Spinner />
           </div>
           {submitted && (
             <Notification
               type="success"
               message="¡Gracias por solicitar una cotización! Pronto nos comunicaremos contigo para proporcionarte la información que necesitas."
+            />
+          )}
+          {error && (
+            <Notification
+              type="error"
+              message="¡No pudimos enviar tu mensaje, inténtalo nuevamente más tarde."
             />
           )}
           {/* <div className="form__item__full">
@@ -102,11 +141,11 @@ export const QuoteForm = () => {
             <TextField
               typeField="textarea"
               label="Descripción de tu Proyecto"
-              name="description"
+              name="comments"
               placeholder="Háblanos un poco acerca de tu proyecto"
-              errors={errors.description}
-              touched={touched.description}
-              value={values.description}
+              errors={errors.comments}
+              touched={touched.comments}
+              value={values.comments}
             />
           </div>
           {/* <div className='form__item__full'>

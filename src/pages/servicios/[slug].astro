@@ -30,9 +30,9 @@ const process = serviceData?.process ?? [];
       <div class="main__caption">
         <h1 class="title" transition:name={`service ${serviceData?.name}`}>
           <span class="animate-fade-right animate-duration-1000 animate-ease-in-out animate-fill-both" >{serviceData?.name}</span>
-          <span class="title__typing animate-fade-right animate-duration-1000 animate-delay-100 animate-ease-in-out animate-fill-both">
+          <!-- <span class="title__typing animate-fade-right animate-duration-1000 animate-delay-100 animate-ease-in-out animate-fill-both">
             <TypingText client:load array={adjectives} />
-          </span>
+          </span> -->
         </h1>
         <p class="animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in-out animate-fill-both">
           {serviceData?.description}
