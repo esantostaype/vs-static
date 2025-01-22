@@ -7,7 +7,7 @@ const { name, slug, thumbnail } = project;
 
 <li transition:name=`image${ slug }`>
   <a class="portfolio__image" href={`/proyectos/${slug}`}>
-    <Image src={thumbnail} width={720} height={648} alt={name} />
+    <Image src={thumbnail} width={720} height={648} alt={name} class="aspect-[4/3]" />
   </a>
 </li>
 

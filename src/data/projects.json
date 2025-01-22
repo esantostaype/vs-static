@@ -34,6 +34,36 @@
     ]
   },
   {
+    "slug": "minjus",
+    "name": "Ministerio de Justicia",
+    "description": "",
+    "thumbnail": "/images/projects/minjus.webp",
+    "categories": [
+      {
+        "name": "Sistemas Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/minjus.webp"
+      }
+    ]
+  },
+  {
     "slug": "sol-y-luna",
     "name": "Sol y Luna",
     "description": "",
@@ -235,6 +265,53 @@
       },
       {
         "url": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706462285/JVS_Control_01_9d51eec81d.webp"
+      }
+    ]
+  },
+  {
+    "slug": "campus-romero",
+    "name": "Campus Romero",
+    "description": "",
+    "thumbnail": "/images/projects/campus.webp",
+    "categories": [
+      {
+        "name": "Sistemas Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/campus.webp"
+      }
+    ]
+  },
+  {
+    "slug": "utp",
+    "name": "Capacitación UTP",
+    "description": "",
+    "thumbnail": "/images/projects/utp.webp",
+    "categories": [
+      {
+        "name": "Capacitaciones"
+      }
+    ],
+    "technologies": [],
+    "gallery": [
+      {
+        "url": "/images/projects/utp.webp"
       }
     ]
   }
