@@ -1,11 +1,63 @@
-<footer class="site-footer">
-    <p>© 2025 IT Soluciones. Todos los derechos reservados.</p>
+---
+import Container from '@/components/Container.astro'
+import FooterAddressItem from '@/components/FooterAddressItem.astro'
+import FooterColumn from '@/components/FooterColumn.astro'
+import SocialIcon from '@/components/SocialIcon.astro'
+import { Email, Facebook, Instagram, Location, Phone, Tiktok, X } from '@/components/Icons'
+const currentYear = new Date().getFullYear()
+---
+<footer class="mt-8 md:mt-12 xl:mt-20 surface text-gray-400 text-sm bg-background">
+  <Container className="py-8 md:py-16 flex flex-col lg:flex-row gap-8 justify-between">
+    <div class="lg:max-w-80">
+      <div class="mb-2">
+        <a href="/" rel="home" class="logo">
+            <img src="/images/vortex-iso.svg" width="35" height="40" alt="Iso" class="iso" />
+            <img src="/images/vortex-studio.svg" width="166" height="30" alt="IT Soluciones" class="logo__label" />
+            <img src="/images/vortex-studio-light-bg.svg" width="166" height="30" alt="IT Soluciones" class="logo__label__light-bg" />
+        </a>
+      </div>
+      <p><strong class="font-bold">Nos adecuamos a tus necesidades</strong><br>
+        Te ayudamos a superar los más grandes desafíos, con el objetivo de alcanzar tu potencial.</p>
+    </div>
+    <div class="flex flex-col md:flex-row gap-8 md:gap-16">
+      <FooterColumn title="Síguenos en">
+        <div class="flex gap-2">
+          <SocialIcon><Facebook width="16"/></SocialIcon>
+          <SocialIcon><X width="16"/></X>
+          <SocialIcon><Instagram width="16"/></SocialIcon>
+          <SocialIcon><Tiktok width="16"/></SocialIcon>
+        </div>
+      </FooterColumn>
+      <FooterColumn title="Contáctanos">
+        <div class="flex flex-col gap-4">
+          <FooterAddressItem>
+            <Location width="18" slot="icon"/>
+            <p slot="content"><strong class="text-white font-semibold">IT Soluciones</strong><br>
+                Arequipa 2655 Of. 603,<br>
+                San Isidro</p>
+          </FooterAddressItem>
+          <FooterAddressItem>
+            <Email width="18" slot="icon"/>
+            <p slot="content">contacto@itsoluciones.pe</p>
+          </FooterAddressItem>
+        </div>
+      </FooterColumn>
+    </div>
+  </Container>
+  <section class="border-t border-t-[rgba(255,255,255,0.1)] py-6 md:py-8">
+    <Container className="flex flex-col md:flex-row justify-between gap-2">
+      <div>Copyright © { currentYear } IT Soluciones. Todos los derechos reservados.</div>
+    </Container>
+  </section>
 </footer>
 
 <style>
-    .site-footer {
-        border-top: 1px solid var(--lightgray2);
-        padding: 30px 0;
-        text-align: center;
-    }
+  .footer-links a{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .footer-links a:hover{
+    color: white;
+    text-decoration: none;
+  }
 </style>

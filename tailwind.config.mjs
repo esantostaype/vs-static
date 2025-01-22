@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: '#00c864'
+        accent: '#00c864',
+        background: '#0A0A20'
       },
       fontFamily: {
         sans: ['Inter'],
