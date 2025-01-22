@@ -67,11 +67,11 @@ export const QuoteForm = () => {
 
           setSubmitted(true)
           resetForm()
-          setTimeout(() => setSubmitted(false), 5000)
+          setTimeout(() => setSubmitted(false), 8000)
         } catch (error) {
           console.error('Error sending email:', error)
           setError(true)
-          setTimeout(() => setError(false), 5000)
+          setTimeout(() => setError(false), 8000)
         } finally {
           setSubmitting(false)
         }
@@ -91,7 +91,7 @@ export const QuoteForm = () => {
           {error && (
             <Notification
               type="error"
-              message="¡No pudimos enviar tu mensaje, inténtalo nuevamente más tarde."
+              message="¡No pudimos enviar tu mensaje, inténtalo nuevamente más tarde o envíanos un email a contacto@itsoluciones.pe"
             />
           )}
           {/* <div className="form__item__full">
