@@ -42,7 +42,7 @@ const projectData = projectsData.find((s) => s.slug === project.slug);
       <ul class="gallery">
         {
           projectData?.gallery.map((image, index) => (
-            <li class="text-center">
+            <li class="text-center min-h-full">
               <img src={ image.url } class="w-full" />
             </li>
           ))
