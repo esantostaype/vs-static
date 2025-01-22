@@ -1,5 +1,116 @@
 [
   {
+    "slug": "fresh-life",
+    "name": "Fresh Life",
+    "description": "",
+    "thumbnail": "/images/projects/fresh-life.webp",
+    "categories": [
+      {
+        "name": "Sitios Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Wordpress",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/wordpress_b8a9ba5f8e.svg"
+      },
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/fresh-life-all.webp"
+      }
+    ]
+  },
+  {
+    "slug": "sol-y-luna",
+    "name": "Sol y Luna",
+    "description": "",
+    "thumbnail": "/images/projects/sol-y-luna.webp",
+    "categories": [
+      {
+        "name": "Sitios Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Wordpress",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/wordpress_b8a9ba5f8e.svg"
+      },
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/sol-y-luna-all.webp"
+      }
+    ]
+  },
+  {
+    "slug": "anthem-media",
+    "name": "Anthem Media",
+    "description": "",
+    "thumbnail": "/images/projects/anthem.webp",
+    "categories": [
+      {
+        "name": "Sitios Web"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Wordpress",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/wordpress_b8a9ba5f8e.svg"
+      },
+      {
+        "name": "HTML 5",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/html_5_d5f9c3da3f.svg"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/css_3_0c7099c161.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "https://res.cloudinary.com/dq6txmetn/image/upload/v1706460932/js_da28f35892.svg"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/anthem1.webp"
+      },
+      {
+        "url": "/images/projects/anthem2.webp"
+      },
+      {
+        "url": "/images/projects/anthem3.webp"
+      },
+      {
+        "url": "/images/projects/anthem4.webp"
+      }
+    ]
+  },
+  {
     "slug": "drumlab",
     "name": "Drumlab",
     "description": "Drumlab es mucho más que un simple proyecto de branding; es una experiencia visual que fusiona la creatividad y la identidad de marca. Este proyecto destaca por su enfoque único en el diseño de marca, creando una presencia visual distintiva que deja una impresión duradera en la audiencia.",

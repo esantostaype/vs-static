@@ -15,6 +15,7 @@ const { name, slug, thumbnail } = project;
   li {
     cursor: pointer;
     overflow: hidden;
+    flex-basis: calc(100% / 3);
   }
 
   li img {
@@ -29,7 +30,7 @@ const { name, slug, thumbnail } = project;
     transform: scale(1.1);
   }
 
-  li:nth-child(-n + 3) {
+  /* li:nth-child(-n + 3) {
     flex-basis: calc(100% / 3);
   }
 
@@ -39,7 +40,7 @@ const { name, slug, thumbnail } = project;
 
   li:nth-child(n + 6) {
     flex-basis: calc(100% / 3);
-  }
+  } */
 
   .portfolio__image {
     height: 100%;
